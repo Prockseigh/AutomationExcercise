@@ -1,0 +1,23 @@
+<dataSets>
+<dataSet_2>
+    <newName>koko</newName>
+    <newEmail>koko@koko.com</newEmail>
+</dataSet_2>
+
+<dataSet_3>
+    <emailAddr>kokoko@test.com</emailAddr>
+    <password>kokoko1</password>
+
+</dataSet_3>
+
+    <dataSet_4>
+        <invalidEmail>set.test@test.com</invalidEmail>
+        <invalidPassword>tegjfsa1</invalidPassword>
+    </dataSet_4>
+
+    <dataSet_5>
+        <existingName>SetTest</existingName>
+        <existingEmail>asdas@safs.com</existingEmail>
+    </dataSet_5>
+
+</dataSets>

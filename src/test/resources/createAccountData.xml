@@ -1,0 +1,19 @@
+<dataSets>
+    <dataSet_1>
+        <password>koko123</password>
+        <day>22</day>
+        <month>12</month>
+        <year>1998</year>
+        <firstName>Mircea</firstName>
+        <lastName>Ion</lastName>
+        <company>koko</company>
+        <address1>test</address1>
+        <address2>testTest</address2>
+        <country>Israel</country>
+        <state>TEST</state>
+        <city>Hariana</city>
+        <zipcode>123321</zipcode>
+        <mobileNumber>0767972564</mobileNumber>
+    </dataSet_1>
+
+</dataSets>
