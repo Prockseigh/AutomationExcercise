@@ -2,10 +2,10 @@ package ObjectData;
 
 public class LogInObjectData {
 
-    String emailAddr;
-    String password;
-    String invalidEmail;
-    String invalidPassword;
+    private String emailAddr;
+    private String password;
+    private String invalidEmail;
+    private String invalidPassword;
 
     public String getEmailAddr() {
         return emailAddr;

@@ -2,10 +2,10 @@ package ObjectData;
 
 public class SignUpObjectData {
 
-    String newName;
-    String newEmail;
-    String existingName;
-    String existingEmail;
+    private String newName;
+    private String newEmail;
+    private String existingName;
+    private String existingEmail;
 
     public String getNewName() {
         return newName;

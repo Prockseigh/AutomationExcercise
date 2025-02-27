@@ -1,11 +1,11 @@
 package ObjectData;
 
 public class ContactUsObjectData {
-    String name;
-    String email;
-    String subject;
-    String message;
-    String file;
+    private String name;
+    private String email;
+    private String subject;
+    private String message;
+    private String file;
 
     public String getName() {
         return name;
