@@ -22,7 +22,7 @@ public class LoginTest extends Hooks{
 
 
     @Test
-
+ //happyTest
     public void happyTest()
     {
         logInObjectDataMap = xmlReader.loadData("src/test/resources/signUpAndInData.xml", LogInObjectData.class);
