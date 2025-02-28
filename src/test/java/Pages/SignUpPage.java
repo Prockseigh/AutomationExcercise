@@ -29,15 +29,16 @@ public class SignUpPage extends CommonMethods {
     WebElement nameField;
     @FindBy(xpath = ("//input[@data-qa='signup-email']"))
     WebElement emailField;
-    @FindBy(xpath = ("//button[text()='Signup']"))
-    WebElement signUpButton;
+    @FindBy(xpath = ("//button[@data-qa='signup-button']"))
+    WebElement signupButton;
 
     public void completeSignUp(SignUpObjectData data) {
         isDisplayed(nameField);
         elementMethods.clearFillElement(nameField,data.getNewName());
         isDisplayed(emailField);
         elementMethods.clearFillElement(emailField,data.getNewEmail());
-        clickOnSignUp();
+        isDisplayed(signupButton);
+        elementMethods.clickOnElement(signupButton);
         elementMethods.assertCurrentUrl("https://www.automationexercise.com/signup");
     }
 
@@ -54,7 +55,7 @@ public class SignUpPage extends CommonMethods {
 
 
     public void clickOnSignUp() {
-        isDisplayed(signUpButton);
-        elementMethods.clickOnElement(signUpButton);
+        isDisplayed(signupButton);
+        elementMethods.clickOnElement(signupButton);
     }
 }

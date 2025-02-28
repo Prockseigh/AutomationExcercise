@@ -27,7 +27,7 @@ public class ContactUsFormTest extends Hooks {
 
     public void metodaTest(){
         contactUsObjectDataMap = xmlReader.loadData("src/test/resources/contactUsData.xml", ContactUsObjectData.class);
-        ContactUsObjectData data1 =  contactUsObjectDataMap.get("dataSet_2");
+        ContactUsObjectData data1 =  contactUsObjectDataMap.get("dataSet_5");
         homePage = new HomePage(getDriver());
         contactUsFormPage = new ContactUsFormPage(getDriver());
         elementMethods = new ElementMethods(getDriver());

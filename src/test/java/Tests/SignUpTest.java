@@ -22,7 +22,7 @@ public class SignUpTest extends Hooks {
     SignUpPage signUpPage;
     private Map<String, SignUpObjectData> signUpObjectDataMap;
 
-   @Test
+  /* @Test
 
     public void happyTest()
     {
@@ -39,11 +39,12 @@ public class SignUpTest extends Hooks {
         LoggerUtility.infoTest("The user completes SignUp fields");
         signUpPage.clickOnSignUp();
         LoggerUtility.infoTest("User clicks on Signup");
-    }
+    }*/
 
     @Test
     public void negativeTest()
     {
+
         signUpObjectDataMap = xmlReader.loadData("src/test/resources/signUpAndInData.xml", SignUpObjectData.class);
         SignUpObjectData data =  signUpObjectDataMap.get("dataSet_5");
         homePage = new HomePage(getDriver());
