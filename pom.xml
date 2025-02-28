@@ -52,6 +52,7 @@
                     <configuration>
                         <systemPropertyVariables>
                             <browser>chrome</browser>
+                            <ci_cd>true</ci_cd>
                         </systemPropertyVariables>
                     </configuration>
 
