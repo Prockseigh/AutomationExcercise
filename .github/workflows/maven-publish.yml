@@ -37,4 +37,4 @@ jobs:
     - name: Run Automation Suite
       run: mvn clean install -Dci_cd=true -Dbrowser=${{ github.event.browser }} -DsuiteXmlFile=suites/${{ github.event.input.suite }} -PCustomSuite
 
-    -
+    
