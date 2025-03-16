@@ -37,7 +37,7 @@ public class SignUpTest extends Hooks {
         LoggerUtility.infoTest("The user clicks on login ");
         signUpPage.completeSignUp(data1);
         LoggerUtility.infoTest("The user completes SignUp fields");
-        //scoate drecu click pe sign up din metoda de signup si pune aici click cu assert
+
 
     }
 

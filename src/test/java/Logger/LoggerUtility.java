@@ -50,6 +50,9 @@ public class LoggerUtility {
         }
     }
 
+    public static synchronized void errorLog(String errorName){
+        logger.info(Thread.currentThread().getName()+": "+getCallInfo()+errorName);
+    }
 }
 
 
