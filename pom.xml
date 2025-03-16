@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.26.0</version>
+            <version>4.24.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -65,9 +65,9 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>3.2.5</version>
                         <configuration>
-                            <suiteXmlFiles>
+                            <!--<suiteXmlFiles>
                                 <suiteXmlFile>${suiteXmlFile}.xml</suiteXmlFile>
-                            </suiteXmlFiles>
+                            </suiteXmlFiles>-->
                         </configuration>
                     </plugin>
                 </plugins>
