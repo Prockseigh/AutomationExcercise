@@ -25,7 +25,7 @@ public class ChromeService implements BrowserServiceInterface{
         options.addArguments("--window-size=1920,1080");
 
         if(Boolean.parseBoolean(ci_cd))
-            options.addArguments("--headless");
+            options.addArguments("--headless=new");
 
         return options;
     }

@@ -23,7 +23,7 @@ public class HomePage extends CommonMethods {
         PageFactory.initElements(driver,this); //se pot indentifica elementele prin @findBy
     }
 
-    @FindBy(xpath = "//p[text()='Consent']")
+    @FindBy(xpath = "/html/body/div/div[2]/div[2]/div[2]/div[2]/button[1]/p")
     WebElement consent;
 
     @FindBy(xpath = "//*[text()= ' Products']")
