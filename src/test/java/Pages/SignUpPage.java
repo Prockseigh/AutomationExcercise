@@ -3,6 +3,7 @@ package Pages;
 import HelperMethods.CommonMethods;
 import HelperMethods.ElementMethods;
 import ObjectData.SignUpObjectData;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,6 +33,7 @@ public class SignUpPage extends CommonMethods {
     @FindBy(xpath = ("//button[@data-qa='signup-button']"))
     WebElement signupButton;
 
+
     public void completeSignUp(SignUpObjectData data) {
         isDisplayed(nameField);
         elementMethods.clearFillElement(nameField,data.getNewName());
@@ -55,7 +57,9 @@ public class SignUpPage extends CommonMethods {
 
 
     public void clickOnSignUp() {
+        waitForElementVisibility(signupButton,3);
         isDisplayed(signupButton);
-        elementMethods.clickOnElement(signupButton);
+        clickJS(signupButton);
+
     }
 }

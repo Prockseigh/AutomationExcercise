@@ -39,7 +39,6 @@ public class CreateAccountInfoTest extends Hooks {
         homePage.clickOnConsent();
         homePage.clickOnLogin();
         signUpPage.completeSignUp(data1);
-        signUpPage.clickOnSignUp();
         createAccountPage.completeCreateAccount(data);
         deleteAccountPage.clickDeleteAccountButton("gaaa");
         deleteAccountPage.continueAfterDelete();

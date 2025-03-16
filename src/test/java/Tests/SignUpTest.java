@@ -22,8 +22,8 @@ public class SignUpTest extends Hooks {
     SignUpPage signUpPage;
     private Map<String, SignUpObjectData> signUpObjectDataMap;
 
-  /* @Test
 
+    @Test
     public void happyTest()
     {
         signUpObjectDataMap = xmlReader.loadData("src/test/resources/signUpAndInData.xml", SignUpObjectData.class);
@@ -37,9 +37,9 @@ public class SignUpTest extends Hooks {
         LoggerUtility.infoTest("The user clicks on login ");
         signUpPage.completeSignUp(data1);
         LoggerUtility.infoTest("The user completes SignUp fields");
-        signUpPage.clickOnSignUp();
-        LoggerUtility.infoTest("User clicks on Signup");
-    }*/
+        //scoate drecu click pe sign up din metoda de signup si pune aici click cu assert
+
+    }
 
     @Test
     public void negativeTest()

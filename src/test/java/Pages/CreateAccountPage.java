@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 
@@ -71,12 +72,10 @@ public class CreateAccountPage extends CommonMethods
     {
         selectGender(titleMrs,titleMr,"Mr.");
         elementMethods.fillElement(passwordField,data.getPassword());
-        elementMethods.sendKeysTo(dayOfBirth,data.getDay());
-        Assert.assertTrue(dayOfBirth.getText().contains(data.getDay()));
-        elementMethods.sendKeysTo(monthOfBirth,data.getMonth());
-        Assert.assertTrue(monthOfBirth.getText().contains(data.getMonth()));
-        elementMethods.sendKeysTo(yearOfBirth,data.getYear());
-        Assert.assertTrue(yearOfBirth.getText().contains(data.getYear()));
+        elementMethods.fillElement(dayOfBirth,data.getDay());
+        Assert.assertTrue(monthOfBirth.isDisplayed());
+        selectMonth(data.getMonth());
+        elementMethods.fillElement(yearOfBirth,data.getYear());
         checkNewsLetter();
         checkOffers();
         elementMethods.fillElement(firstnameField,data.getFirstName());
@@ -138,6 +137,13 @@ public class CreateAccountPage extends CommonMethods
        isDisplayed(create);
        elementMethods.clickOnElement(create);
         elementMethods.assertCurrentUrl("https://www.automationexercise.com/account_created");
+    }
+
+    public void selectMonth(String month)
+    {
+        Select select = new Select(monthOfBirth);
+        select.selectByValue(month);
+
     }
 
     public void continueButton()

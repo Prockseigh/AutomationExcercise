@@ -3,6 +3,8 @@
         <classes>
             <class name = "Tests.SignUpTest"/>
             <class name = "Tests.LoginTest"/>
+            <class name = "Tests.CreateAccountInfoTest"/>
+            <class name = "Tests.ContactUsFormTest"/>
         </classes>
     </test>
 </suite>

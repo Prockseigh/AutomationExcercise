@@ -5,7 +5,7 @@ public class ContactUsObjectData {
     private String email;
     private String subject;
     private String message;
-    private String file;
+
 
     public String getName() {
         return name;
@@ -23,7 +23,4 @@ public class ContactUsObjectData {
         return message;
     }
 
-    public String getFile() {
-        return file;
-    }
-}
+   }

@@ -63,7 +63,7 @@ public class ContactUsFormPage {
         LoggerUtility.infoTest("Subject was entered");
         elementMethods.clearFillElement(messageField, data.getMessage());
         LoggerUtility.infoTest("Message was completed");
-        elementMethods.addFile(uploadFile,data.getFile());
+        elementMethods.addFile(uploadFile,"src/test/resources/black1.png");
         LoggerUtility.infoTest("File was added");
 
     }

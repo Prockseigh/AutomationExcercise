@@ -17,10 +17,13 @@ public class CommonMethods {
         this.driver = driver;
         this.elementMethods = new ElementMethods(driver);
     }
-    public void isDisplayed (WebElement element)
-    {
-        element.isDisplayed();
+    public boolean isDisplayed (WebElement element){
+    try {
+        return element.isDisplayed();
 
+    }catch (Exception e){
+        return false;
+    }
     }
     public void waitForElementVisibility(WebElement element, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
@@ -31,5 +34,10 @@ public class CommonMethods {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("javascript:window.scrollBy(0,300)");
     } //in javaMethods class
+
+    public void clickJS(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver ;
+        js.executeScript("arguments[0].click();", element);
+    }
 
 }
