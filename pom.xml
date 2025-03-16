@@ -55,7 +55,7 @@
 
     </dependencies>
 
-    <profiles>
+    <!--<profiles>
         <profile>
             <id>CustomSuite</id>
             <build>
@@ -73,7 +73,7 @@
                 </plugins>
             </build>
         </profile>
-    </profiles>
+    </profiles>-->
 
     <build>
         <pluginManagement>
