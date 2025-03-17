@@ -17,6 +17,14 @@ package ObjectData;
    private String zipcode;
    private String mobileNumber;
 
+    public String getGenderMr() {
+        return genderMr;
+    }
+
+    private String genderMr;
+
+
+
     public String getPassword() {
         return password;
     }
