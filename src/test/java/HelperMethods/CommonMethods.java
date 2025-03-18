@@ -30,11 +30,6 @@ public class CommonMethods {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public void scrollBy(int x, int y) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("javascript:window.scrollBy(0,300)");
-    } //in javaMethods class
-
     public void clickJS(WebElement element){
         JavascriptExecutor js = (JavascriptExecutor) driver ;
         js.executeScript("arguments[0].click();", element);

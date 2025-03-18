@@ -33,16 +33,10 @@ public class ContactUsFormTest extends Hooks {
         contactUsFormPage = new ContactUsFormPage(getDriver());
         elementMethods = new ElementMethods(getDriver());
         homePage.clickOnConsent();
-        ChainTestListener.log("User clicked on consent");
-        LoggerUtility.infoTest("User clicks on consent");
         homePage.clickOnContactUs();
-        ChainTestListener.log("User clicked contactUs");
         contactUsFormPage.completeContactUsPage(data1);
-        LoggerUtility.infoTest("User completes contactUsPage steps");
-        ChainTestListener.log("User completes contact us page steps");
         contactUsFormPage.submitContact();
-        LoggerUtility.infoTest("Form was submitted");
-        ChainTestListener.log("Form was submitted");
+
 
 
 

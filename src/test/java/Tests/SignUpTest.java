@@ -7,6 +7,7 @@ import ObjectData.SignUpObjectData;
 import Pages.HomePage;
 import Pages.SignUpPage;
 import ShareDataBrowser.Hooks;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -32,11 +33,9 @@ public class SignUpTest extends Hooks {
         elementMethods = new ElementMethods(getDriver());
         signUpPage = new SignUpPage(getDriver());
         homePage.clickOnConsent();
-        LoggerUtility.infoTest("The user clicks on consent ");
         homePage.clickOnLogin();
-        LoggerUtility.infoTest("The user clicks on login ");
         signUpPage.completeSignUp(data1);
-        LoggerUtility.infoTest("The user completes SignUp fields");
+
 
 
     }
@@ -51,17 +50,16 @@ public class SignUpTest extends Hooks {
         elementMethods = new ElementMethods(getDriver());
         signUpPage = new SignUpPage(getDriver());
         homePage.clickOnConsent();
-        LoggerUtility.infoTest("The user clicks on consent ");
         homePage.clickOnLogin();
-        LoggerUtility.infoTest("The user clicks on login ");
         signUpPage.completeExistingSingUp(data);
-        LoggerUtility.infoTest("The user completes SignUp fields with existing data set");
         signUpPage.clickOnSignUp();
-        LoggerUtility.infoTest("User clicks on Signup");
+
 
 
         WebElement errorEmailMessage = getDriver().findElement(By.xpath("//p[text() = 'Email Address already exist!']"));
         Assert.assertTrue(errorEmailMessage.isDisplayed());
+        LoggerUtility.infoTest("Expected error message displayed");
+        ChainTestListener.log("Expected error message displayed");
     }
 
 

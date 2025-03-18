@@ -4,6 +4,7 @@ import HelperMethods.CommonMethods;
 import HelperMethods.ElementMethods;
 import Logger.LoggerUtility;
 import ObjectData.LogInObjectData;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,30 +37,44 @@ public class LogInPage {
 
         commonMethods.isDisplayed(emailField);
         LoggerUtility.infoTest("Email field is displayed");
+        ChainTestListener.log("Email field is displayed");
         elementMethods.clearFillElement(emailField,data.getEmailAddr());
         LoggerUtility.infoTest("Email was filled");
+        ChainTestListener.log("Email was filled");
         commonMethods.isDisplayed(passwordField);
         LoggerUtility.infoTest("Password field is displayed");
+        ChainTestListener.log("Password field is displayed");
         elementMethods.clearFillElement(passwordField,data.getPassword());
         LoggerUtility.infoTest("Password was filled");
+        ChainTestListener.log("Password was filled");
         commonMethods.isDisplayed(loginButton);
         LoggerUtility.infoTest("Login button is displayed");
+        ChainTestListener.log("Login button is displayed");
         elementMethods.clickOnElement(loginButton);
+        LoggerUtility.infoTest("Login button clicked");
+        ChainTestListener.log("Login button was clicked");
 
     }
 
     public void completeInvalidLogIN(LogInObjectData data){
         commonMethods.isDisplayed(emailField);
         LoggerUtility.infoTest("Email field is displayed");
+        ChainTestListener.log("Email field is displayed");
         elementMethods.clearFillElement(emailField,data.getInvalidEmail());
         LoggerUtility.infoTest("Invalid Email was filled");
+        ChainTestListener.log("Email was filled");
         commonMethods.isDisplayed(passwordField);
         LoggerUtility.infoTest("Password field is displayed");
+        ChainTestListener.log("Password field displayed");
         elementMethods.clearFillElement(passwordField, data.getInvalidPassword());
         LoggerUtility.infoTest("Invalid Password was filled");
+        ChainTestListener.log("Password was filled");
         commonMethods.isDisplayed(loginButton);
         LoggerUtility.infoTest("Login button is displayed");
+        ChainTestListener.log("Login button displayed");
         elementMethods.clickOnElement(loginButton);
+        LoggerUtility.infoTest("Login button clicked");
+        ChainTestListener.log("Login button clicked");
 
 
 

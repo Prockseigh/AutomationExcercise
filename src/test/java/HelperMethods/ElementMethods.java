@@ -40,12 +40,12 @@ public class ElementMethods {
         Assert.assertEquals(newValue, text);
     }
     public void fillElement(WebElement element, String text) {
-        /*Assert.assertTrue(element.isDisplayed());*/
-        element.sendKeys(text);// Fill field
+        Assert.assertTrue(element.isDisplayed());
+        element.sendKeys(text);
         LoggerUtility.infoTest("The field was completed");
         String newValue = element.getAttribute("value");
-//        Assert.assertFalse(newValue.isEmpty());
-      //  Assert.assertEquals(newValue, text);
+        Assert.assertFalse(newValue.isEmpty());
+        Assert.assertEquals(newValue, text);
     }
 
 

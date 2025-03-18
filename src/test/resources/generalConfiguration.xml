@@ -1,0 +1,8 @@
+<configuration>
+    <dataBaseConfig>
+        <port>3306</port>
+        <dataBase>Create_Account_Database</dataBase>
+        <userName>root</userName>
+        <password>AiureA123!</password>
+    </dataBaseConfig>
+</configuration>

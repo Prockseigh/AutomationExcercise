@@ -3,6 +3,7 @@ package Pages;
 import HelperMethods.CommonMethods;
 import HelperMethods.ElementMethods;
 import Logger.LoggerUtility;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -42,6 +43,7 @@ public class HomePage extends CommonMethods {
     {   isDisplayed(consent);
         elementMethods.clickOnElement(consent);
         LoggerUtility.infoTest("User clicks on Consent");
+        ChainTestListener.log("Click on consent");
     }
 
     public void clickOnProducts()
@@ -58,11 +60,13 @@ public class HomePage extends CommonMethods {
     {   isDisplayed(login);
         elementMethods.clickOnElement(login);
         LoggerUtility.infoTest("User clicks on logIn");
+        ChainTestListener.log("Click on login");
     }
 
     public void clickOnContactUs()
     {   isDisplayed(contactUs);
         elementMethods.clickOnElement(contactUs);
         LoggerUtility.infoTest("User clicks on Contact Us");
+        ChainTestListener.log("Click on login");
     }
 }
