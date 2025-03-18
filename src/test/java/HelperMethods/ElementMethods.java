@@ -4,8 +4,7 @@ package HelperMethods;
 import Logger.LoggerUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
+
 
 import org.testng.Assert;
 
@@ -22,11 +21,6 @@ public class ElementMethods {
 
     public void clickOnElement(WebElement element) {
         element.click();
-    }
-
-    public void sendKeysTo(WebElement element, String text)
-    {
-        element.sendKeys(text);
     }
 
     public void clearFillElement(WebElement element, String text) {

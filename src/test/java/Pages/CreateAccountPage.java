@@ -98,8 +98,7 @@ public class CreateAccountPage extends CommonMethods
         LoggerUtility.infoTest("Month displayed");
         ChainTestListener.log("Month displayed");
 
-        elementMethods.fillElement(monthOfBirth,data.getMonth());
-        //selectMonth(data.getMonth());
+        selectMonth(data.getMonth());
         LoggerUtility.infoTest("month filled");
         ChainTestListener.log("Month filled");
 
